@@ -1,0 +1,26 @@
+# MkDocs build output
+site/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Distribution packages
+*.zip
+*.tar.gz

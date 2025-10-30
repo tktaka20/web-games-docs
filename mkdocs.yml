@@ -1,0 +1,53 @@
+site_name: プロジェクトドキュメント
+site_description: システム仕様の統合ドキュメント
+site_author: TMMN
+
+# file:// プロトコルで正しく動作させるための設定
+use_directory_urls: false
+
+theme:
+  name: material
+  language: ja
+  palette:
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand  # サイドバー自動展開
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+
+nav:
+  - ホーム: index.md
+  - IF定義書:
+    - インターフェースC: IF定義書/c.md
+    - インターフェースD: IF定義書/d.md
+  - 処理機能記述書:
+    - 処理機能A: 処理機能記述書/a.md
+    - 処理機能B: 処理機能記述書/b.md
+  - DB定義書:
+    - テーブルE: DB定義書/e.md
+    - テーブルF: DB定義書/f.md
+  - Mermaid図テスト: mermaid-test.md
+  - 開発ガイド:
+    - GitHub Flow: GITHUB_FLOW.md
+    - バージョン管理: VERSIONING.md
+    - Issue管理: GITHUB_ISSUES_GUIDE.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - tables  # テーブルサポート
+  - toc:
+      permalink: true
