@@ -25,6 +25,12 @@ extra_javascript:
 
 nav:
   - ホーム: index.md
+  - ゲーム仕様書:
+    - リアクションタイムゲーム: games/reaction-time.md
+    - 色当てゲーム: games/color-guess.md
+    - 数独（ナンバープレイス）: games/sudoku.md
+    - マインスイーパー: games/minesweeper.md
+    - リバーシ（オセロ）: games/reversi.md
   - IF定義書:
     - インターフェースC: IF定義書/c.md
     - インターフェースD: IF定義書/d.md
