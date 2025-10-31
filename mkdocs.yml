@@ -31,6 +31,7 @@ nav:
     - 数独（ナンバープレイス）: games/sudoku.md
     - マインスイーパー: games/minesweeper.md
     - リバーシ（オセロ）: games/reversi.md
+    - テトリス: games/tetris.md
 
 markdown_extensions:
   - admonition
